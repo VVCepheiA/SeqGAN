@@ -8,6 +8,13 @@ from rollout import ROLLOUT
 from target_lstm import TARGET_LSTM
 import cPickle
 
+"""
+    @todo:
+        - Identify all the parts that needs to be changed
+        - remove oracle
+        - use real data
+"""
+
 #########################################################################################
 #  Generator  Hyper-parameters
 ######################################################################################
@@ -50,7 +57,7 @@ def generate_samples(sess, trainable_model, batch_size, generated_num, output_fi
             buffer = ' '.join([str(x) for x in poem]) + '\n'
             fout.write(buffer)
 
-
+# @todo: update to new loss function using real data
 def target_loss(sess, target_lstm, data_loader):
     # target_loss means the oracle negative log-likelihood tested with the oracle model "target_lstm"
     # For more details, please see the Section 4 in https://arxiv.org/abs/1609.05473

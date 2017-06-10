@@ -1,5 +1,9 @@
 # SeqGAN
 
+## Notices
+* This repo is under active development.
+* Trying to use SeqGAN to generate Chinese poetry
+
 ## Requirements: 
 * **Tensorflow r1.0.1**
 * Python 2.7
@@ -84,4 +88,4 @@ epoch:	145	nll:	8.68066
 epoch:	150	nll:	8.6832
 ```
 
-Note: this code is based on the [previous work by ofirnachum](https://github.com/ofirnachum/sequence_gan). Many thanks to [ofirnachum](https://github.com/ofirnachum).
+Note: this code is based on the [previous work by LantaoYu](https://github.com/LantaoYu/SeqGAN). Many thanks to [LantaoYu](https://github.com/LantaoYu).
